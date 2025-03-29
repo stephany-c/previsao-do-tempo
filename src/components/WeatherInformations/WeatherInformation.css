@@ -1,0 +1,15 @@
+.medidas{
+    background-color: azure;
+    display: flex;
+    margin: 20px;
+    padding: 20px;
+    align-items: center;
+    width: 600px;
+    border-radius: 20px;
+   opacity: 50%;
+}
+
+.medidas div{
+
+    margin: 15px;
+}

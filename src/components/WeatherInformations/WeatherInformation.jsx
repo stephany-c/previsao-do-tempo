@@ -1,23 +1,29 @@
-
+import './WeatherInformation.css'
 
 function WeatherInformation({ weather }) {
     console.log(weather)
 
-    if (!weather || !weather.main) {
-        return <p>Insira o local que queira saber o clima</p>;
-    }
+
     return (
-        <div className="WeatherInformation" >
+        <div className="weather-container" >
             <h1>{weather.name}</h1>
-
             {weather.visibility}
-            <p>Temperatura: {weather.main.temp}°C</p>
-            <p>Temperatura: {weather.main.temp}°C</p>
-            <p>Sensação térmica: {weather.main.feels_like}°C</p>
-            <p>Umidade: {weather.main.humidity}%</p>
-            <p>Pressão: {weather.main.pressure} hPa</p>
 
+            <div>
+                <img
+                    scr={`http://openweathermap.org/img/wn/${weather.weather[0].icon}.png`} />
 
+                <p>Temperatura: {weather.main.temp}°C</p>
+            </div>
+            <div>
+                <p>{weather.weather[0].descriprion}</p>
+
+            </div>
+            <div className='medidas'>
+                <div><p>Sensação térmica: {weather.main.feels_like}°C</p></div>
+                <div><p>Umidade: {weather.main.humidity}%</p></div>
+                <div><p>Pressão: {weather.main.pressure} hPa</p></div>
+            </div>
         </div>
 
 
