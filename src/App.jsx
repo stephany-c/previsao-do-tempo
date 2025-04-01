@@ -25,7 +25,7 @@ function App() {
 
   return (
 
-    <div className='previsao-container'>
+    <div className='container'>
       <h1> Previsão do Tempo </h1>
       <input ref={inputRef} type='text' placeholder='Digite o nome da cidade'>
       </input>

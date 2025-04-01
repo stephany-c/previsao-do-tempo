@@ -1,44 +1,35 @@
 .container {
   max-width: 1000px;
   padding: 20px;
+  margin: 0 auto;
   text-align: center;
-  align-items: center;
 }
 
+h1 {
+    font-size: 3rem;
+    color:aliceblue;
+}
 
-input{
+input {
   padding: 10px;
-  border-radius: 20px 0 0 20px;
+  border-radius: 20px 0px 0 20px;
   border: none;
   width: 60%;
   max-width: 300px;
+  outline: none;
 
 }
 
 button {
-  border-radius:20px ;
-  background-color: blueviolet;
-  border-radius: 0 20px 20px 0;
-  border: none;
+  background-color: rgb(248, 172, 57);
+  border: 0;
   padding: 10px;
-  color: aliceblue;
+  border-radius: 0 20px 20px 0;
+  cursor: pointer;
+  color: azure;
   font-weight: bold;
- 
 }
 
-button:hover{
-
-  background-color: rgb(97, 12, 176);
-}
-
-
-.previsao-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  height: 100vh;
-  text-align: center;
-  color: black;
-  
+button:hover {
+  background-color: brown;
 }
