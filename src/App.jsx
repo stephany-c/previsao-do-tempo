@@ -24,7 +24,7 @@ function App() {
     console.log(apiInfo5Days)
     setWeather5Days(apiInfo5Days.data)
     setWeather(apiInfo.data)
-    console.log(data)
+
 
 
   }

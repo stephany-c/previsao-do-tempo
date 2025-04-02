@@ -10,7 +10,7 @@ function WeatherInformation({ weather }) {
                 <p className='temperature'>{Math.round(weather.main.temp)}°C</p>
             </div>
             <div>
-                <p className='description'>{weathernp.weather[0].description}</p>
+                <p className='description'>{weather.weather[0].description}</p>
             </div>
             <div className='details'>
                 <div><p>Sensação térmica:{weather.main.feels_like}°C</p></div>
